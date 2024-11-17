@@ -25,7 +25,7 @@ export default function Search() {
     const timeStamp = new Date().getTime()
     const hash = generateHash(timeStamp)
 
-    const url = `https://gateway.marvel.com:443/v1/public/characters?apikey=${publicKey}&hash=${hash}&ts=${timeStamp}&nameStartsWith=${characterName}&limit=100`
+    const url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=<1655f2c81e8dca444e02ba3b42f0fe73>&hash=<641c4dfbe5e4af30a645d14c4f7518e2>`
 
     fetch(url)
       .then(response => response.json())
@@ -44,7 +44,7 @@ export default function Search() {
     const timeStamp = new Date().getTime()
     const hash = generateHash(timeStamp)
 
-    const url = `https://gateway.marvel.com:443/v1/public/characters/${characterId}/comics?apikey=${publicKey}&hash=${hash}&ts=${timeStamp}`
+    const url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=<1655f2c81e8dca444e02ba3b42f0fe73>&hash=<641c4dfbe5e4af30a645d14c4f7518e2>`
 
     fetch(url)
       .then(response => response.json())
