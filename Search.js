@@ -1,5 +1,5 @@
 
-import "../styles/Search.scss"
+import "Styles/Search.scss"
 import { useState } from "react"
 import md5 from "md5"
 import Characters from "./Characters"
